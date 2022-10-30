@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Friend from '../Friend/Friend';
 
 const Friends = () => {
     const[friends, setFriends] = useState([]);
@@ -10,6 +11,11 @@ const Friends = () => {
     return (
         <div>
             <h3>Hello My Friends : {friends.length}</h3>
+            {
+                friends.map(index=><Friend
+                    
+                ></Friend>)
+            }
         </div>
     );
 };
