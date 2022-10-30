@@ -13,7 +13,8 @@ const Friends = () => {
             <h3>Hello My Friends : {friends.length}</h3>
             {
                 friends.map(index=><Friend
-                    
+                    key={index.id}
+                    index = {index}
                 ></Friend>)
             }
         </div>

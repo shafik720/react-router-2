@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Friend = () => {
+const Friend = (props) => {
     return (
         <div>
             <h3>Single Friend</h3>
