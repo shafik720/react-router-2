@@ -9,7 +9,7 @@ const Friends = () => {
     },[])
     return (
         <div>
-            <h3>Hello My Friends</h3>
+            <h3>Hello My Friends : {friends.length}</h3>
         </div>
     );
 };
