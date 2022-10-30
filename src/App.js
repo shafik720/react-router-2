@@ -7,6 +7,7 @@ import Contact from './Components/Contact/Contact';
 import Friends from './Components/Friends/Friends';
 import Header from './Components/Header/Header';
 import Error from './Components/Error/Error';
+import FriendDetails from './Components/FriendDetails/FriendDetails';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <Route  path="/home" element={<Home></Home>}></Route>
         <Route  path="/about" element={<About></About>}></Route>
         <Route  path="/contact" element={<Contact></Contact>}></Route>
-        <Route  path="/friends" element={<Friends></Friends>}></Route>
+        <Route  path="/friends" element={<Friends></Friends>}></Route>        
+        <Route path="friend/details" element={<FriendDetails></FriendDetails>}></Route>
         <Route  path="*" element={<Error></Error>}></Route>
       </Routes>
     </div>
