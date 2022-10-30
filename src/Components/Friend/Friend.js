@@ -1,9 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router';
 
 const Friend = (props) => {
     const{name, id} = props.index;
+    
+    let navigate = useNavigate();
     function showUserDetails(){
-        console.log(id);
+        let link = `/friend/${id}`;
+        navigate(link);
     }
     return (
         <div>
