@@ -9,6 +9,7 @@ import Header from './Components/Header/Header';
 import Error from './Components/Error/Error';
 import FriendDetails from './Components/FriendDetails/FriendDetails';
 import Posts from './Components/Posts/Posts';
+import PostDetails from './Components/PostDetails/PostDetails';
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
         <Route  path="/contact" element={<Contact></Contact>}></Route>
         <Route  path="/friends" element={<Friends></Friends>}></Route>        
         <Route path="friend/:details" element={<FriendDetails></FriendDetails>}></Route>
-        <Route path="/posts" element={<Posts></Posts>}></Route>
+        <Route path="/posts" element={<Posts></Posts>}>
+          <Route path=":postId" element={<PostDetails></PostDetails>}></Route>
+        </Route>
         <Route  path="*" element={<Error></Error>}></Route>
       </Routes>
     </div>
